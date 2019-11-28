@@ -18,15 +18,15 @@ def main():
     print("Modelo de nome de pasta: RaimundoNFSilva_Ex-01")
     print("Modelo de nome de arquivo: ex-01_q-01.c\n\n")
 
-    input("ENTER PARA CONTINUAR")
+    input("ENTER PARA CONTINUAR ")
 
     while True:
         clear_screen()
-        nome = input("Qual o seu nome completo: > ")
-        num_ex = input("Qual o número do exercício: > ")
-        qtd_quests = int(input("Qual a quantidade de questões: > "))
+        nome = input("\tQual o seu nome completo?\n> ")
+        num_ex = input("\tQual o número do exercício?\n> ")
+        qtd_quests = int(input("\tQual a quantidade de questões?\n> "))
 
-        if input("\n\nConfirma os valores acima? S/N >").lower() in ['sim', 's']:
+        if input("\n\n\tConfirma os valores acima? S/N\n>").lower() in ['sim', 's']:
             break
 
     clear_screen()
@@ -35,7 +35,7 @@ def main():
 
     file_creator(folder_name, num_ex, qtd_quests)
 
-    input("PRONTO! ENTER PARA FINALIZAR")
+    input("PRONTO! ENTER PARA FINALIZAR ")
     clear_screen()
 
 
