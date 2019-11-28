@@ -18,13 +18,13 @@ def main():
     print("Modelo de nome de pasta: RaimundoNFSilva_Ex-01")
     print("Modelo de nome de arquivo: ex-01_q-01.c\n\n")
 
-    input("ENTER PARA CONTINUAR ")
+    input("\n\tENTER PARA CONTINUAR ")
 
     while True:
         clear_screen()
-        nome = input("\tQual o seu nome completo?\n> ")
-        num_ex = input("\tQual o número do exercício?\n> ")
-        qtd_quests = int(input("\tQual a quantidade de questões?\n> "))
+        nome = input("\n\tQual o seu nome completo?\n> ")
+        num_ex = input("\n\tQual o número do exercício?\n> ")
+        qtd_quests = int(input("\n\tQual a quantidade de questões?\n> "))
 
         if input("\n\n\tConfirma os dados? S/n\n>").lower() in ['n', 'nao']:
             continue
@@ -32,17 +32,15 @@ def main():
 
     clear_screen()
 
-    folder_creator(nome, num_ex)
+    folder_name = folder_creator(nome, num_ex)
 
     file_creator(folder_name, num_ex, qtd_quests)
 
-    input("PRONTO! ENTER PARA FINALIZAR ")
+    input("\n\n\tPRONTO! ENTER PARA FINALIZAR ")
     clear_screen()
 
 
 def folder_creator(nome, num_ex):
-    global folder_name
-
     nome = nome.split()
     user_folder = ''
 
@@ -65,6 +63,8 @@ def folder_creator(nome, num_ex):
     folder_name = user_folder + "_EX-" + num_ex
 
     os.system('mkdir %s' % folder_name)
+
+    return folder_name
 
 
 def file_creator(folder_name, num_ex, qtd_quests):
