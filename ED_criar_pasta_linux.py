@@ -90,4 +90,5 @@ def add_zero(number):
     return number
 
 
-main()
+if __name__ == '__main__':
+    main()
