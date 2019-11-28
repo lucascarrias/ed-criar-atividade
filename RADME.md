@@ -9,3 +9,8 @@ Script básico para quem tem preguiça de criar uma pasta e renomear os arquivos
 ### Usar
 
 `$ python3 ED_criar_pasta_linux.py`
+
+### Contribuir
+`$ git clone https://github.com/LucasCarrias/ed-criar-atividade`\
+`$ cd ed-criar-atividade`\
+`$ pip install -r requirements.txt`
