@@ -2,7 +2,7 @@ import os
 
 
 def main():
-    os.system('clear')
+    clear_screen()
 
     welcome = "* Bem vindo, preguiçoso! *"
     bot_top = "*"*len(welcome)
@@ -21,7 +21,7 @@ def main():
     input("ENTER PARA CONTINUAR")
 
     while True:
-        os.system('clear')
+        clear_screen()
         nome = input("Qual o seu nome completo: > ")
         num_ex = input("Qual o número do exercício: > ")
         qtd_quests = int(input("Qual a quantidade de questões: > "))
@@ -29,14 +29,14 @@ def main():
         if input("\n\nConfirma os valores acima? S/N >").lower() in ['sim', 's']:
             break
 
-    os.system('clear')
+    clear_screen()
 
     folder_creator(nome, num_ex)
 
     file_creator(folder_name, num_ex, qtd_quests)
 
     input("PRONTO! ENTER PARA FINALIZAR")
-    os.system('clear')
+    clear_screen()
 
 
 def folder_creator(nome, num_ex):
@@ -88,6 +88,10 @@ def add_zero(number):
         number = '0' + str(abs(int(number)))
 
     return number
+
+
+def clear_screen():
+    os.system('clear')
 
 
 if __name__ == '__main__':
