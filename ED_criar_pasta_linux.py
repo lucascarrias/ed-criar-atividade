@@ -7,11 +7,11 @@ def main():
     welcome = "* Bem vindo, preguiçoso! *"
     bot_top = "*"*len(welcome)
 
-    print(bot_top)
-    print(welcome)
-    print(bot_top + "\n\n\n")
+    print("\n\t" + bot_top)
+    print("\t" + welcome)
+    print("\t" + bot_top + "\n\n")
 
-    print("Este é programa é para quem tem preguiça de\n" +
+    print("Este programa é para quem tem preguiça de\n" +
           "criar uma pasta dos exercícios do Dr. Fábio.\n" +
           "Uma pasta será criada com o seu nome e todos os arquivos .c\n" +
           "com uma estrutura básica.\n\n")
