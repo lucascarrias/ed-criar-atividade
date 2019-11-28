@@ -26,8 +26,9 @@ def main():
         num_ex = input("\tQual o número do exercício?\n> ")
         qtd_quests = int(input("\tQual a quantidade de questões?\n> "))
 
-        if input("\n\n\tConfirma os valores acima? S/N\n>").lower() in ['sim', 's']:
-            break
+        if input("\n\n\tConfirma os dados? S/n\n>").lower() in ['n', 'nao']:
+            continue
+        break
 
     clear_screen()
 
