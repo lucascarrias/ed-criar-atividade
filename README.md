@@ -3,14 +3,29 @@
 Script básico para quem tem preguiça de criar uma pasta e renomear os arquivos de acordo com que o Professor Fábio quer
 
 ### Instalar
-`$ git clone https://github.com/LucasCarrias/ed-criar-atividade`\
-`$ cd ed-criar-atividade`
+
+  1. Clonar repositorio\
+    `$ git clone https://github.com/LucasCarrias/ed-criar-atividade ~/.ed-criar-atividade`
+
+  2. Abrir as configs do terminal\
+    `$ sudo nano ~/.bashrc` or `$ sudo nano ~/.zshrc`
+
+  3. Adicionar codigo nas configs do terminal
+    ```
+    function ed-ca() {
+      python3 -B ~/.ed-criar-atividade/ED_criar_pasta_linux.py
+    }
+    ```
+  4. Atualizar terminal\
+    `$ source ~/.bashrc` or `$ source ~/.zshrc`
 
 ### Usar
 
-`$ python3 ED_criar_pasta_linux.py`
+`$ cd <pasta-alvo>`\
+`$ ed-ca`
 
 ### Contribuir
+
 `$ git clone https://github.com/LucasCarrias/ed-criar-atividade`\
 `$ cd ed-criar-atividade`\
 `$ pip install -r requirements.txt`
