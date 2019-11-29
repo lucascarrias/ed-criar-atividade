@@ -76,7 +76,13 @@ def file_creator(folder_name, num_ex, qtd_quests):
         file_name = '-'.join(['ex', str(num_ex)]) + '_' + '-'.join(['q', str(num)]) + '.c'
 
         with open('/'.join(['.', folder_name, file_name]), 'w') as file:
-            file.write("#include <stdio.h>\n\nvoid main(){\n\n\n\n}\n")
+            file.write(
+                '#include <stdio.h>\n' +
+                '#include <stdlib.h>\n\n' +
+                'int main() {\n\n\n' +
+                '\treturn 0;\n' +
+                '}\n'
+            )
             print(file_name + ' > Criado!')
 
 
