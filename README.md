@@ -1,6 +1,6 @@
 # ED Criar Atividade
 
-Script básico para quem tem preguiça de criar uma pasta e renomear os arquivos de acordo com que o Professor Fábio quer
+Script básico para quem tem preguiça de criar as pastas e nomear os arquivos de acordo com o solicitado pelo professor Fabio
 
 ### Instalar
 
@@ -10,7 +10,7 @@ Script básico para quem tem preguiça de criar uma pasta e renomear os arquivos
   2. Abrir as configs do terminal\
     `$ sudo nano ~/.bashrc` or `$ sudo nano ~/.zshrc`
 
-  3. Adicionar codigo nas configs do terminal
+  3. Adicionar codigo nas configs do terminal\
     ```
     function ed-ca() {
       python3 -B ~/.ed-criar-atividade/ED_criar_pasta_linux.py
